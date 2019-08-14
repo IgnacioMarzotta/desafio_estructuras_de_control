@@ -1,29 +1,20 @@
-content = 
-"
-<table>
-  <tbody>
-    <tr>
-      <td> 1 </td>
-      <td> 2 </td>
-      <td> 3 </td>
-      <td> 4 </td>
-    </tr>
-    <tr>
-      <td> 5 </td>
-      <td> 6 </td>
-      <td> 7 </td>
-      <td> 8 </td>
-    </tr>
-    <tr>
-      <td> 9 </td>
-      <td> 10 </td>
-      <td> 11 </td>
-      <td> 12 </td>
-    </tr>
-  <tbody>
-</table>
-"
-
-print content
-
-#No entendí la idea de éste, espero esté correcto :(
+col = 6
+row = 4
+cont = 0
+​
+b = "<table> \n"
+b += "  <tbody> \n"
+​
+row.times do
+  b+="    <tr> \n"
+  col.times do 
+    cont+=1
+    b +="       <td> #{cont} </td> \n"    
+  end
+  b+="    </tr> \n"
+end
+​
+b += "  </tbody> \n"
+b += "</table> \n"
+​
+puts b

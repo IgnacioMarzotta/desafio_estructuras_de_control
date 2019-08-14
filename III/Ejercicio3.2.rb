@@ -26,4 +26,4 @@ content =
 
 print content
 
-#Tampoco estoy seguro de éste, espero esté correcto :(
+#No entendí la idea de éste, espero esté correcto :(

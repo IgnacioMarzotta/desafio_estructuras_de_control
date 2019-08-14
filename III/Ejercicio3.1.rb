@@ -1,6 +1,34 @@
-print "1 2 3 4"
-print "2 4 6 8"
-print "3 6 9 12"
-print "4 8 12 16"
+#Use el número "1" para el ejemplo del desafío
+i = 1
+puts "Ingresa un número"
+n = gets.chomp.to_i
 
-#Espero que esté bien, porque honestamente no entendí la idea del ejercicio :(
+puts
+5.times do |i|
+  n * i
+  print "#{n * i} "
+  i + 1
+end
+
+puts
+5.times do |i|
+  n + 1 * i
+  print "#{(n + 1) * i} "
+  i + 1
+end
+
+puts
+5.times do |i|
+  n + 2 * i
+  print "#{(n + 2) * i} "
+  i + 1
+end
+
+puts
+5.times do |i|
+  n + 3 * i
+  print "#{(n + 3) * i} "
+  i + 1
+end
+
+i = 1

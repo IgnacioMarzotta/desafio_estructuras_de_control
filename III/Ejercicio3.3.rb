@@ -13,9 +13,9 @@ while(chooseIndex == 1)
 
   if(n != 0)
     11.times do |i|
-    n * i
+    result = n * i
     i + 1
-    puts n * i
+    puts ("#{n} " + "x " "#{i}: #{result}") 
     end
     chooseIndex = 1
   end
